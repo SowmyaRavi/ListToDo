@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_add_task:
                 final EditText taskEdit = new EditText(this);
                 AlertDialog dialog = new AlertDialog.Builder(this)
-                        .setTitle("Add a new ToDo")
+                        .setTitle("Add a Task")
                         .setView(taskEdit)
                         .setPositiveButton("Add", new DialogInterface.OnClickListener() {
 
@@ -128,9 +128,9 @@ public class MainActivity extends AppCompatActivity {
         taskEdit.setText(task);
 
         AlertDialog dialog = new AlertDialog.Builder(this)
-                .setTitle("Update ToDo")
-                .setView(taskEdit)
-                .setPositiveButton("Update", new DialogInterface.OnClickListener() {
+               .setTitle("Update a Task")
+              .setView(taskEdit)
+              .setPositiveButton("Update", new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
